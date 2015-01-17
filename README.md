@@ -6,6 +6,19 @@ to solely compute a Voronoi diagram, it is completely standalone, with
 no dependency on external code: it contains no rendering code: that is
 left to the user of the library.
 
+## How to use
+
+```
+npm install mizchi/voronoi --save-dev
+```
+
+```javascript
+Voronoi = require('voronoi');
+var voronoi = new Voronoi();
+voronoi.compute([{x: 100, y: 100}, {x: 200, y: 250}], {xl:0,xr:800,yt:0,yb:600});
+//=> return result of voronoi regions
+```
+
 ## Core files
 
 * rhill-voronoi-core.js
